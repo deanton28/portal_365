@@ -1,0 +1,26 @@
+{
+  "name": "portal_365",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "portal_365"
+  },
+  "author": "MegAnton",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

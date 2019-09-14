@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: none;
+}
+
+.container-image {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  /*border: 1px solid #000;*/
+}
+
+.picture-courses {
+  position: absolute;
+  top: 16%;
+  left: 14%;
+  width: 10%;
+  height: 20%;
+  /*border: 1px solid #000;*/
+  background: url(../img/courses.svg) center no-repeat;
+  background-size: contain;
+  transition: all 1s;
+}
+
+.picture-courses:hover {
+  background: url(../img/courses_active.svg) center no-repeat;
+  transform: scale(1.5);
+}

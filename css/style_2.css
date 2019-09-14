@@ -1,0 +1,154 @@
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  /*border: 1px solid black;*/
+}
+
+.container-icon {
+  display: inline-block;
+  margin: 10px;
+  margin-right: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #555555;
+  z-index: 1000;
+}
+
+.menu-line {
+  margin: 5px;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.container-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  /*border: 1px solid #000;*/
+  z-index: 100;
+}
+
+.container-icon:hover + .container-content,
+.container-content:hover {
+  display: inline-block;
+}
+
+.container-icon:hover .line-middle {
+  opacity: 0;
+}
+
+.container-icon:hover .line-top {
+  width: 22px;
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.container-icon:hover .line-bottom {
+  width: 22px;
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+	/*margin-bottom: 8px;*/
+}
+
+.menu li a{
+	display: block;
+	margin-bottom: -1px;
+	padding: 8px 14px;
+	text-decoration: none;
+	color: #0088cc;
+	border: 1px solid #e5e5e5;
+	background: #f5f5f5;
+}
+
+.menu li a:hover{
+	color: #dae4ea;
+	background: #08628c;
+}
+
+
+.container-image {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  /*border: 1px solid #000;*/
+}
+
+.container-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #f30;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.container-icons-top,
+.container-icons-bottom {
+  /*border: 1px solid green;*/
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  margin: auto 10%;
+  /*border: 1px solid blue;*/
+  width: 15%;
+  height: 45%;
+  transition: all 0.5s;
+}
+
+.picture-courses {
+  background: url(../img/courses.svg) center no-repeat;
+  background-size: contain;
+}
+
+.picture-video {
+  background: url(../img/video_active.svg) center no-repeat;
+  background-size: contain;
+}
+
+.picture-library {
+  background: url(../img/library_active.svg) center no-repeat;
+  background-size: contain;
+}
+
+.picture-forum {
+  background: url(../img/forum_active.svg) center no-repeat;
+  background-size: contain;
+}
+
+.picture-faq {
+  background: url(../img/faq_active.svg) center no-repeat;
+  background-size: contain;
+}
+
+.picture:hover {
+  transform: scale(1.5);
+}
+
+.picture-courses:hover {
+  background-image: url(../img/courses_active.svg);
+}
